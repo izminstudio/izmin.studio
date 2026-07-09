@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>izmin studio</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<style>
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');
+    font-weight: 100 900;
+  }
+
+  :root {
+    --accent: #3D5AFE;
+    --ink: #111111;
+    --paper: #FFFFFF;
+    --line: #E5E5E5;
+    --muted: #9A9A9A;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 48px 24px 32px;
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    text-align: center;
+  }
+
+  .wordmark {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+  }
+
+  .wordmark span {
+    color: var(--accent);
+  }
+
+  /* ---------- Main ---------- */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    flex: 1;
+    justify-content: center;
+    padding: 64px 0;
+  }
+
+  .profile-photo {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .business-card {
+    width: 260px;
+    height: 260px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .business-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Placeholder state — remove once real images are added */
+  .placeholder {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 13px;
+  }
+
+  footer a {
+    color: var(--ink);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+
+  footer a:hover {
+    color: var(--accent);
+  }
+
+  .divider {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="wordmark">IZMIN<span>.</span>STUDIO</div>
+  </header>
+
+  <main>
+    <!-- 프로필 사진: 아래 div를 <img src="프로필사진경로.jpg" alt="프로필 사진"> 로 교체하세요 -->
+    <div class="profile-photo">
+      <img src="https://github.com/izminstudio/izmin.studio/blob/main/izmin_profile.png?raw=true" alt="프로필 사진">
+    </div>
+
+    <!-- 명함 이미지: 아래 div를 <img src="명함이미지경로.jpg" alt="명함"> 로 교체하세요 -->
+    <div class="business-card">
+      <img src="https://github.com/izminstudio/izmin.studio/blob/main/izmin_buinesscard.png?raw=true" alt="명함">
+    </div>
+  </main>
+
+  <footer>
+    <a href="mailto:izmin.studio@gmail.com">izmin.studio@gmail.com</a>
+    <span class="divider"></span>
+    <a href="https://www.instagram.com/izmin.studio" target="_blank" rel="noopener noreferrer">@izmin.studio</a>
+  </footer>
+
+</body>
+</html>
